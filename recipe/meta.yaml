@@ -32,6 +32,8 @@ requirements:
     - pyyaml
     - scipy
     - scikit-image
+    - tifffile
+    - imio
 
 test:
   imports:
