@@ -37,6 +37,8 @@ requirements:
     - numpy
     - qtpy
     - superqt
+    - bg-atlasapi
+    - bg-space
 
 test:
   imports:
