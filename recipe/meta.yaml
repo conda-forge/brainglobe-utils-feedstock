@@ -1,5 +1,5 @@
 {% set name = "brainglobe-utils" %}
-{% set version = "0.3.6" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-utils-{{ version }}.tar.gz
-  sha256: 05e8e941d13079aa907493b8f20fa5c500f5013f1546fd14bbc1ea89ee8bbed0
+  sha256: f2134be884af1a9cec07a20be6bd214a93127bacb925ce9752f1656341efa8b1
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
     - natsort
     - pandas
     - psutil
+    - pyarrow
     - slurmio
     - configobj
     - tqdm
@@ -38,7 +39,7 @@ requirements:
     - qtpy
     - superqt
     - bg-atlasapi
-    - bg-space
+    - brainglobe-space
 
 test:
   imports:
