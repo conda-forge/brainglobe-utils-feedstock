@@ -38,7 +38,7 @@ requirements:
     - qtpy
     - superqt
     - bg-atlasapi
-    - bg-space
+    - brainglobe-space
 
 test:
   imports:
