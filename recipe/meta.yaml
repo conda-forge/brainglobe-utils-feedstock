@@ -23,23 +23,22 @@ requirements:
     - pip
   run:
     - python >=3.8.0
+    - brainglobe-atlasapi >=2.0.1
+    - brainglobe-space
+    - configobj
     - natsort
+    - nibabel >=2.1.0
+    - numpy
     - pandas
     - psutil
     - pyarrow
-    - slurmio
-    - configobj
-    - tqdm
-    - pyyaml
-    - scipy
+    - pynrrd
+    - PyYAML
     - scikit-image
+    - scipy
+    - slurmio
     - tifffile
-    - imio
-    - numpy
-    - qtpy
-    - superqt
-    - bg-atlasapi
-    - brainglobe-space
+    - tqdm
 
 test:
   imports:
