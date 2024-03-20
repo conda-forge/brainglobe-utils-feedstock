@@ -38,7 +38,7 @@ requirements:
     - numpy
     - qtpy
     - superqt
-    - bg-atlasapi
+    - brainglobe-atlasapi >=2.0.1
     - brainglobe-space
 
 test:
