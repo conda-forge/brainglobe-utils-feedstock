@@ -1,5 +1,5 @@
 {% set name = "brainglobe-utils" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-utils-{{ version }}.tar.gz
-  sha256: f2134be884af1a9cec07a20be6bd214a93127bacb925ce9752f1656341efa8b1
+  sha256: d321d19838b97fdbfec774a3a8d80078505f283a2c5cd13b56b4fa9613b23a5a
 
 build:
   noarch: python
@@ -38,7 +38,7 @@ requirements:
     - numpy
     - qtpy
     - superqt
-    - bg-atlasapi
+    - brainglobe-atlasapi >=2.0.1
     - brainglobe-space
 
 test:
