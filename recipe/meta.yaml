@@ -27,9 +27,11 @@ requirements:
     - pandas
     - psutil
     - pyarrow
+    - pynrrd
     - slurmio
     - configobj
     - tqdm
+    - nibabel
     - pyyaml
     - scipy
     - scikit-image
