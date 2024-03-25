@@ -34,7 +34,6 @@ requirements:
     - scipy
     - scikit-image
     - tifffile
-    - imio
     - numpy
     - qtpy
     - superqt
