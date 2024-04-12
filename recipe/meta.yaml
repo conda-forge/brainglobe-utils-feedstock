@@ -1,5 +1,5 @@
 {% set name = "brainglobe-utils" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-utils-{{ version }}.tar.gz
-  sha256: 4d10b4be6e8701c5a6db2f64ad5d66a9cc653ef83804606bf8d766b685fbf8bc
+  sha256: 7e8eff10c355048e88e8f5f45538ae5f16a085e7aa499fc403efbe2263cb4985
 
 build:
   noarch: python
