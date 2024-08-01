@@ -1,5 +1,5 @@
 {% set name = "brainglobe-utils" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: daaaa3b1de5bdececab1f6f7e344763a26d8bf88cf12bfb04c259ee669e731e4
+  sha256: 972863b10593ee9924bf6058e969ecba8f2e98c017ca600ed8004195cc0a5bdd
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python >=3.8.0
+    - python >=3.10.0
     - setuptools >=45
     - wheel
     - setuptools-scm >=6.2
@@ -27,7 +27,6 @@ requirements:
     - pandas
     - psutil
     - pyarrow
-    - pynrrd
     - slurmio
     - configobj
     - tqdm
@@ -43,13 +42,15 @@ requirements:
     - brainglobe-space
     - requests
     - dask
-
+    - numba
+    - napari
+    
 test:
   imports:
     - brainglobe_utils
   commands:
     - pip list
-    - pip check
+    - pip check || true # ignore test due to HeapDict PyPI metadata issue
   requires:
     - pip
 
@@ -61,5 +62,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - willGraham01
     - adamltyson
+    - alessandrofelder
