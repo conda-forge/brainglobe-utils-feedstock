@@ -42,6 +42,7 @@ requirements:
     - brainglobe-space
     - requests
     - dask
+    - numba
 
 test:
   imports:
