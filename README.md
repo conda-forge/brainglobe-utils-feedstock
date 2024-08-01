@@ -144,5 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@adamltyson](https://github.com/adamltyson/)
-* [@willGraham01](https://github.com/willGraham01/)
+* [@alessandrofelder](https://github.com/alessandrofelder/)
 
