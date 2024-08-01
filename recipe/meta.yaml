@@ -43,7 +43,8 @@ requirements:
     - requests
     - dask
     - numba
-
+    - napari
+    
 test:
   imports:
     - brainglobe_utils
