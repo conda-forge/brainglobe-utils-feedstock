@@ -1,5 +1,5 @@
 {% set name = "brainglobe-utils" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 972863b10593ee9924bf6058e969ecba8f2e98c017ca600ed8004195cc0a5bdd
+  sha256: 42a9be64e5029afe8d81215b4d1e7fbbfc76d9a55512730eb0ca97b4c6b3ec56
 
 build:
   noarch: python
@@ -44,7 +44,7 @@ requirements:
     - dask
     - numba
     - napari
-    
+
 test:
   imports:
     - brainglobe_utils
