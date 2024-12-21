@@ -12,17 +12,17 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10.0
+    - python {{ python_min }}
     - setuptools >=45
     - wheel
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.8.0
+    - python >={{ python_min }}
     - natsort
     - pandas
     - psutil
@@ -53,6 +53,7 @@ test:
     - pip check || true # ignore test due to HeapDict PyPI metadata issue
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: Shared general purpose tools for the BrainGlobe project
