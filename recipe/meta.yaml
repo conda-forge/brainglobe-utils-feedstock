@@ -1,3 +1,4 @@
+{% set python_min = "3.11" %}
 {% set name = "brainglobe-utils" %}
 {% set version = "0.7.0" %}
 
