@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "brainglobe-utils" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f2a8b5b4bb44d40d2b19aea2029f948c666de67f95eafbce94d0236cb321d099
+  sha256: 021f72472e1fc961d6d86115a257ba36a6fb7796b88587ec436bb6aba9a7f582
 
 build:
   noarch: python
