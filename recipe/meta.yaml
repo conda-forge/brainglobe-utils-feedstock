@@ -33,6 +33,7 @@ requirements:
     - tqdm
     - nibabel
     - pyyaml
+    - rapidyaml
     - scipy
     - scikit-image
     - tifffile
